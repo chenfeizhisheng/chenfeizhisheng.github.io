@@ -1,2 +1,4 @@
-	name: 尘肺之声
-	markdown: kramdown
+name: 尘肺之声
+markdown: kramdown
+paginate: 5
+paginate_path: "/blog/:num/"
