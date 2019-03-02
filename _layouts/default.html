@@ -1,29 +1,93 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<nav>
-    		<ul>
-        		<li><a href="/">主页</a></li>
-	        	<li><a href="/kuaixun">前线快讯</a></li>
-        		<li><a href="/gushi">工人故事集</a></li>
-        		<li><a href="/jieshao">关于尘肺之声</a></li>
-    		</ul>
-		</nav>		
-	</head>
-	<body>
-		<div class="container">
-    		
-        {{ content }}
-        
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li>微信：</li>
-            		<li>电报：</li>
-		</ul>
-		</footer>
-	</body>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="flaticon-university"></i>尘肺之声</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">首页</a></li>
+          <li class="nav-item"><a href="categories/reporting.html" class="nav-link">前线快讯</a></li>
+          <li class="nav-item"><a href="categories/stories.html" class="nav-link">工友故事</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">关于尘肺之声</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+  
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+       {{ content }}
+      </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2><a class="navbar-brand" href="index.html"><i class="flaticon-university"></i>尘肺之声</a></h2>
+              <p>尘肺之声是一批深圳建设者，尘肺病患者的发声平台。</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">联系我们</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="text">微信：</span></li>
+	                <li><a href=""><span class="text">微博：</span></a></li>
+	              </ul>
+	        </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
 </html>
