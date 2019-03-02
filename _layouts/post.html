@@ -11,6 +11,7 @@ layout: default
             <p>
               <img src="images/{{ page.title }}.jpg" alt="" class="img-fluid">
             </p>
+		  {{ page.title }}{{ page.date | date_to_string }}
             {{ content }}
           </div> <!-- .col-md-8 -->
           
@@ -34,7 +35,6 @@ layout: default
               <p>2018年，湖南的数百名农民工到了深圳求公道。他们都曾经是深圳的建筑工、深圳的建设者。他们今天都换上了尘肺病。这是他们发声的平台。</p>
             </div>
           </div>
-
         </div>
       </div>
     </section> <!-- .section -->
