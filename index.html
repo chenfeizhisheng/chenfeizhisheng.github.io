@@ -21,10 +21,9 @@ title: 尘肺之声
         <div class="row justify-content-center mb-5 pb-3">
             <h2 class="mb-4">新讯</h2>
         </div>
-        <div class="row d-flex">A
+        <div class="row d-flex">
 	<ul>
 	  {% for post in site.posts %}
-	  <div class="col-md-4 d-flex ftco-animate">B
             <div class="blog-entry align-self-stretch">C
 	              <a href="{{ post.url }}" class="block-20" style="background-image: url('images/{{ post.title }}.jpg');"></a>
               <div class="text p-4 d-block">D
@@ -35,7 +34,6 @@ title: 尘肺之声
                 <p>{{ excerpt }}</p>
               </div>
             </div>
-          </div>
 	  {% endfor %}
 	</ul>
         </div>
