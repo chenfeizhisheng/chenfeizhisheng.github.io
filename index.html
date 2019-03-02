@@ -1,28 +1,45 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>尘肺之声</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">主页</a></li>
-	        	<li><a href="/kuaixun">前线快讯</a></li>
-        		<li><a href="/gushi">工人故事集</a></li>
-        		<li><a href="/jieshao">关于尘肺之声</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>支持尘肺病工人，深圳的建设者</h1>
-				<p>测试</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li>微信：</li>
-            <li>电报：</li>
-			</ul>
-		</footer>
-	</body>
-</html>
+---
+layout: default
+title: 尘肺之声
+---
+
+    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg'); background-attachment:fixed;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center">
+            <h1 class="mb-4">尘肺病工友，在维权</h1>
+            <p><a href="#" class="btn btn-primary px-4 py-3">最新情况</a> <a href="#" class="btn btn-secondary px-4 py-3">支持他们</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">新讯</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+	<ul>
+	  {% for post in site.posts %}
+	  <div class="col-md-4 d-flex ftco-animate">
+              <div class="blog-entry align-self-stretch">
+	              <a href="{{ post.url }}" class="block-20" style="background-image: url('images/{{ post.title }}.jpg');"></a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div>{{ post.date | date_to_string }}</div>
+                </div>
+                <h3 class="heading mt-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ excerpt }}</p>
+              </div>
+            </div>
+          </div>
+	  {% endfor %}
+	</ul>
+        </div>
+      </div>
+    </section>
